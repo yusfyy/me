@@ -1,0 +1,511 @@
+                                 /*HTML*/
+html {
+    user-select: none;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*,head,body {
+    margin: 0;
+    padding: 0;
+}
+                                 /*FONTS*/
+/*jetbrains*/
+@font-face {
+    font-family: jetbrains ;
+    src: url(webfonts/jetbrains/JetBrainsMono-Regular.ttf);    
+}
+/*akira*/
+@font-face {
+    font-family: akira;
+    src: url(webfonts/akira/Akira\ Expanded\ Demo.otf);
+}
+/*coolvetica*/
+@font-face {
+    font-family: coolvetica-regular;
+    src: url(webfonts/coolvetica/coolvetica\ rg.otf);
+}
+@font-face {
+    font-family: coolvetica-italy;
+    src: url(webfonts/coolvetica/coolvetica\ rg\ it.otf);
+}
+@font-face {
+    font-family: coolvetica-light;
+    src: url(webfonts/coolvetica/coolvetica\ condensed\ rg.otf);
+}
+/*nexa*/
+@font-face {
+    font-family: nexa-regular;
+    src: url(webfonts/nexa/Nexa-Heavy.ttf);
+}
+@font-face {
+    font-family: nexa-light;
+    src: url(webfonts/nexa/Nexa-ExtraLight.ttf);
+}
+/*poppins*/
+@font-face {
+    font-family: poppins-regular;
+    src: url(webfonts/poppins/poppins.regular.ttf);
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url(webfonts/poppins/poppins.medium.ttf);
+}
+/*heavitas*/
+@font-face {
+    font-family: heavitas;
+    src: url(webfonts/heavitas/Heavitas.ttf);
+}
+/*mont*/
+@font-face {
+    font-family: mont-regular;
+    src: url(webfonts/mont/Mont-ExtraLightDEMO.ttf);
+}
+@font-face {
+    font-family: mont-bold;
+    src: url(webfonts/mont/Mont-HeavyDEMO.ttf);
+}
+/*montserrat*/
+@font-face {
+    font-family: montserrat-light;
+    src: url(webfonts/montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: montserrat-regular;
+    src: url(webfonts/montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: montserrat-italic;
+    src: url(webfonts/montserrat/Montserrat-Italic.ttf);
+}
+@font-face {
+    font-family: montserrat-medium;
+    src: url(webfonts/montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: montserrat-bold;
+    src: url(webfonts/montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: montserrat-black;
+    src: url(webfonts/montserrat/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: montserrat-thin;
+    src: url(webfonts/montserrat/Montserrat-Thin.ttf);
+}
+                                 /*ANIMASI*/
+/*tanda:#131313*/
+/*shape8sudut*/
+@keyframes shape8sudut {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+/*bulan*/
+@keyframes bulanrise {
+    /* 0% {rotate: -90deg;}
+    50% {rotate: 0deg;}
+    100% {rotate: 90deg;} */
+    0% {rotate: 90deg;}
+    25% {rotate: 180deg;}
+    50% {rotate: 270deg;}
+    75% {rotate: 360deg;}
+    100% {rotate: 450deg;}
+}
+@keyframes matahari {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+@keyframes bulan {
+    0%{rotate: -45deg;}
+    50%{rotate: 0deg;}
+    100%{rotate: 45deg;}
+}
+@keyframes malam {
+    0% {opacity: 0%;}
+    25% {opacity: 100%;}
+    50% {opacity: 0%;}
+    75% {opacity: 100%}
+    100% {opacity: 0%;}
+}
+@keyframes awanmove {
+    0% {transform: translateX(-7%);}
+    50% {transform: translateX(7%);}
+    100% {transform: translateX(-7%);}
+}
+@keyframes staranim {
+    0% {opacity: 0%;}
+    50% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+@keyframes logohome {
+    0% {filter: drop-shadow(0px 0px 0px #13131300);}
+    25% {filter: drop-shadow(0px 0px 10px #f8f8f871);}
+    50% {filter: drop-shadow(0px 0px 0px #13131300);}
+    75% {filter: drop-shadow(0px 0px 10px #f8f8f871)}
+    100% {filter: drop-shadow(0px 0px 0px #13131300);}
+}
+                                 /*NAVIGASI*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    background: #f8f8f800;
+    z-index: 9999;
+}
+/* .navhead {
+    display: flex;
+    position: absolute;
+    left: 1.5%;
+    color: #F8F8F8;
+    font-family: montserrat-black;
+    font-size: 2em;
+} */
+.navlogo {
+    display: flex;
+    height: 4em;
+    width: 4em;
+    position: absolute;
+    left: 0.5%;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    /* margin-right: 5%; */
+    width: 20%;
+    background-color: rgba(127, 255, 212, 0);
+}
+.navbar ul li {
+    display: flex;
+}
+.navbar ul li a {
+    display: flex;
+    color: #F8F8F8;
+    font-family: poppins-medium;
+    text-decoration: none;
+}
+.donate {
+    display: flex;
+    position: absolute;
+    right: 1.5%;
+    text-decoration: none;
+}
+.donate a {
+    text-decoration: none;
+}
+.donate a button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    width: 5em;
+
+    color: #F8F8F8;
+    background: transparent;
+    font-family: poppins-medium;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid #F8F8F8;
+    text-decoration: none;
+}
+/*hover navigasi*/
+.navlogo img:hover {
+    transition: 1s;
+    filter: drop-shadow(0px 0px 5px #f8f8f870);
+}
+.navbar ul li a:hover {
+    transition: 1s;
+    filter: drop-shadow(0px 0px 5px #f8f8f86c);
+}
+.donate a button:hover {
+    transition: 2s;
+    color: #191919;
+    background-color: #F8F8F8;
+}
+                                 /*HOME*/
+.home {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: rgb(48,214,255);
+    background: linear-gradient(0deg, rgba(48,214,255,1) 0%, rgba(2,202,253,1) 30%, rgba(3,182,237,1) 60%, rgba(6,127,195,1) 100%);
+    /* background-color: #191919; */
+    overflow: hidden;
+    z-index: 1;
+}
+.malam {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    /* background: rgb(115,96,199);
+    background: linear-gradient(0deg, rgba(115,96,199,1) 0%, rgba(75,80,169,1) 25%, rgba(62,66,140,1) 50%, rgba(32,34,73,1) 100%); */
+    animation: malam 180s infinite ease-in-out;
+    opacity: 0%;
+    background: rgb(115,96,199);
+    background: linear-gradient(0deg, rgba(115,96,199,1) 0%, rgba(90,77,161,1) 10%, rgba(69,61,128,1) 30%, rgba(32,34,73,1) 100%);
+}
+.logohome {
+    display:flex;
+    height: 20em;
+    width: 20em;
+    position: absolute;
+    left: 40%;
+    bottom: 25vh;
+    z-index: 5;
+    animation: logohome 180s infinite ease-in-out;
+}
+.bukit {
+    display: flex;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    bottom: -60%;
+    z-index: 4;
+    justify-content: center;
+}
+.bukitmalam {
+    display: flex;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    bottom: -60%;
+    z-index: 4;
+    animation: malam 180s infinite ease-in-out;
+    opacity: 0%;
+    justify-content: center;
+}
+.awan1 {
+    animation: awanmove 8s ease-in-out infinite;
+    display: flex;
+    height: 7em;
+    width: 7em;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 3;
+    -webkit-mask-image:linear-gradient(#000, rgba(0,0,0,0));
+    mask-image:linear-gradient(#000, rgba(0,0,0,0));
+}
+.awan2 {
+    animation: awanmove 7s ease-in-out infinite;
+    animation-delay: 1s;
+    display: flex;
+    height: 7em;
+    width: 7em;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    z-index: 3;
+    -webkit-mask-image:linear-gradient(#000, rgba(0,0,0,0));
+    mask-image:linear-gradient(#000, rgba(0,0,0,0));
+}
+.awan3 {
+    animation: awanmove 10s ease-in-out infinite;
+    animation-delay: 0.5s;
+    display: flex;
+    height: 12em;
+    width: 12em;
+    position: absolute;
+    top: 7%;
+    right: 20%;
+    z-index: 3;
+    -webkit-mask-image:linear-gradient(#000, rgba(0,0,0,0));
+    mask-image:linear-gradient(#000, rgba(0,0,0,0));
+}
+.star {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    /* background-color: #1919194b; */
+    z-index: 1;
+    animation: malam 180s infinite ease-in-out;
+    opacity: 0%;
+}
+.star img {
+    display: flex;
+    height: 0.7em;
+    width: 0.7em;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.star img:nth-child(1) {
+    animation: staranim 8s infinite linear;
+    animation-delay: .8;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    scale: .8;
+}
+.star img:nth-child(2) {
+    animation: staranim 10s infinite linear;
+    height: 0.8em;
+    width: 0.7em;
+    position: absolute;
+    top: 12%;
+    left: 18%;
+    rotate: 45deg;
+}
+.star img:nth-child(3) {
+    animation: staranim 7s infinite linear;
+    animation-delay: 1;
+    height: 0.7em;
+    width: 0.7em;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    scale: .6;
+}
+.star img:nth-child(4) {
+    animation: staranim 11s infinite linear;
+    animation-delay: .4;
+    height: 0.7em;
+    width: 0.7em;
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    scale: .7;
+    rotate: 45deg;
+}
+.star img:nth-child(5) {
+    animation: staranim 6s infinite linear;
+    animation-delay: 1.3;
+    height: 0.7em;
+    width: 0.7em;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    scale: .3;
+}
+.star img:nth-child(6) {
+    animation: staranim 5s infinite linear;
+    animation-delay: 3;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+.star img:nth-child(7) {
+    animation: staranim 9s infinite linear;
+    animation-delay: .9;
+    height: 0.7em;
+    width: 0.7em;
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    scale: .7;
+    rotate: 45deg;
+}
+.star img:nth-child(8) {
+    animation: staranim 6.5s infinite linear;
+    animation-delay: 1,5;
+    height: 0.8em;
+    width: 0.7em;
+    position: absolute;
+    top: 40%;
+    right: 23%;
+    scale: .8;
+}
+.star img:nth-child(9) {
+    animation: staranim 4s infinite linear;
+    animation-delay: .5;
+    height: 0.7em;
+    width: 0.7em;
+    position: absolute;
+    top: 4%;
+    right: 28%;
+    scale: .4;
+}
+.star img:nth-child(10) {
+    animation: staranim 8.5s infinite linear;
+    animation-delay: 2;
+    height: 0.7em;
+    width: 0.7em;
+    position: absolute;
+    top: 19%;
+    right: 40%;
+    rotate: 45deg;
+}
+.star img:nth-child(2)
+.star img:nth-child(4)
+.star img:nth-child(7)
+.star img:nth-child(10) {
+    rotate: 45deg;
+}
+  .bgbulan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height: 225vh;
+    position: absolute;
+    left: -6%;
+    bottom: -130vh;
+    background: #382c2c00;
+    border-radius: 50%;
+    animation: bulanrise 180s ease-in-out infinite;
+    z-index: 2;
+  }
+  .matahari1 {
+    display: flex;
+    height: 6em;
+    width: 6em;
+    position: absolute;
+    left: 2%;
+    margin-bottom: 1%;
+    animation: matahari 10s infinite linear;
+  }
+  .matahari2 {
+    display: flex;
+    height: 6em;
+    width: 6em;
+    position: absolute;
+    right: 2%;
+    margin-bottom: 1%;
+    animation: matahari 10s infinite linear;
+  }
+  .matahari1,
+  .matahari2 {
+    color: #FAE055;
+    filter: drop-shadow(0px 0px 10px #FAE055);
+  }
+  .bulan1 {
+    display: flex;
+    position: absolute;
+    top: 2%;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 #F8F8F8;
+    filter: drop-shadow(0px 0px 50px #f8f8f8);
+    rotate: 345deg;
+  }
+  .bulan2 {
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 #F8F8F8;
+    rotate: 150deg;
+    filter: drop-shadow(0px 0px 50px #f8f8f8);
+  }
+  .matahari1,
+  .matahari2,
+  .bulan1,
+  .bulan2 {
+    scale: .3;
+  }
